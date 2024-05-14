@@ -10,6 +10,6 @@ How to run the Bus Pass Management System Using PHP and MySQL
 
 Admin Credential
 Username: admin
-Password: Test@123
+Password: Rakesh@0811
 
 Pass number: 681924385 or you can create a new pass.
