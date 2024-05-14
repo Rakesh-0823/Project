@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Apply/Renew</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <style>
+      .links{
+        color:white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row col-md-6 col-md-offset-3">
+        <div class="panel panel-primary">
+          <div class="panel-heading text-center">
+            <h1>Application Form</h1>
+          </div>
+          <div class="panel-body">
+            <form action="connect.php" method="post">
+              <div class="form-group">
+                <label for="firstName">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  name="firstName"
+                />
+              </div>
+              <div class="form-group">
+                <label for="contact">Contact</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="contact"
+                  name="contact"
+                />
+              </div>
+              <div class="form-group">
+                <label for="gender">Gender</label>
+                <div>
+                  <label for="male" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="m"
+                      id="male"
+                    />Male</label
+                  >
+                  <label for="female" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="f"
+                      id="female"
+                    />Female</label
+                  >
+                  <label for="others" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="o"
+                      id="others"
+                    />Others</label
+                  >
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                />
+              </div>
+              
+              <div class="form-group">
+                <label for="idt">Identity</label>
+                <select type="text" name="idt" class = "form-control" id="idt" >
+                  <option value="">Choose Identity Type</option>
+                  <option value="Voter card">Voter Card </option>
+                  <option value="PAN Card">PAN Card</option>
+                  <option value="Aaadhar Card">Aaadhar Card</option>
+                  <option value="Student Card">Student Card</option>
+                  <option value="Driving License">Driving License</option>
+                  <option value="Passport">Passport</option>
+                  <option value="Any Official Card">Any Official Card</option>
+                  <option value="Any Other Govt Issued Doc">Any Other Govt Issued Doc</option>
+                </select>
+                
+              </div>
+          
+              <div class="form-group">
+                <label for="ino">Identity Number</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="ino"
+                  name="ino"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="category">Category Type</label>
+                <select type="text" name="category" class = "form-control" >
+                  <option value="">Choose your category</option>
+                  <option value="School Bus Pass">School Bus Pass</option>
+                  <option value="College Bus Pass">College Bus Pass</option>
+                  <option value="MTSC Bus Pass">MTSC Bus Pass</option>
+                  <option value="Disable People Pass">Disable People Pass</option>
+                  <option value="SETC Pass">SETC Pass</option>
+                  <option value="One Day Pas">One Day Pass</option>
+                  <option value="Yearly Pass">Yearly Pass</option>
+                  <option value="Customise Pass">Customise Pass</option>
+                   </select>
+              </div>
+            
+              <div class="form-group">
+                <label for="source">Source</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="source"
+                  name="source"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="des">Destination</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="des"
+                  name="des"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="cost">Cost</label>
+                <select type="text" name="cost" class = "form-control" >
+                  <option value="">Choose your category</option>
+                  <option value="School Bus Pass - Rs.50">School Bus Pass - Rs.50</option>
+                  <option value="College Bus Pass - Rs.75">College Bus Pass - Rs.75</option>
+                  <option value="MTSC Bus Pass - Rs.100">MTSC Bus Pass - Rs.100</option>
+                  <option value="Disable People Pass - Rs.65">Disable People Pass - Rs.65</option>
+                  <option value="SETC Pass - Rs.125">SETC Pass - Rs.125</option>
+                  <option value="One Day Pass - Rs.100">One Day Pass - Rs.100</option>
+                  <option value="Yearly Pass - Rs.800">Yearly Pass - Rs.800</option>
+                  <option value="Customise Pass - Based on Period">Customise Pass - Based on Period</option>
+                   </select>
+              </div>
+
+              <div class="form-group">
+                <label for="sd">Starting date</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="sd"
+                  name="sd"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="ed">Ending date</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="ed"
+                  name="ed"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="pp">Profile Picture </label>
+                <input
+                  type="file"
+                  class="form-control"
+                  id="pp"
+                  name="pp"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="sp">Screenshot of Payment</label>
+                <input
+                  type="file"
+                  class="form-control"
+                  id="sp"
+                  name="sp"
+                />
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+              <input type="submit" class="btn btn-primary"/>
+              <h5 class="btn btn-primary"><a href = "#" class = "links" index2.html> Renew</a></h5>
+              
+            </form>
+          </div>
+          <div class="panel-footer text-right">
+            <small>&copy;Virtual Pass</small>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+</div>
+  </body>
+</html>
